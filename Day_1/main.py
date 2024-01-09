@@ -9,3 +9,6 @@ print("Hello" + " jatt")
 
 #Printing the string with input
 print("Hello" + input("what is your name"))
+
+#Printing the length of the input
+print(len(input()))

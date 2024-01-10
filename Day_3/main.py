@@ -23,13 +23,25 @@
 
 #Nested if/else statement
     
-number = int(input("what is your height"))
+# number = int(input("what is your height"))
 
-if number >= 120:
-    age = int(input("what is your age"))
-    if age >= 10:
-        print("you can take the ride")
-    else:
-        print("you can't take the ride")
-else:
-    print("you can't take the ride")
+# if number >= 120:
+#     age = int(input("what is your age"))
+#     if age >= 10:
+#         print("you can take the ride")
+#     else:
+#         print("you can't take the ride")
+# else:
+#     print("you can't take the ride")
+
+#elif condition
+number = int(input("What is your age"))
+
+if number <= 12:
+    print("You have to pay $10")
+
+elif number <=18:
+    print("you have to pay $15")
+
+else: 
+    print("you have to pay $20")

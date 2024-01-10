@@ -35,6 +35,7 @@ else:
     print("you can't take the ride")
 
 #elif condition
+    
 number = int(input("What is your age"))
 
 if number <= 12:

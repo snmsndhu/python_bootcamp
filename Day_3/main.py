@@ -46,3 +46,10 @@ elif number <=18:
 
 else: 
     print("you have to pay $20")
+
+
+#Logical Operators
+    
+#and => all the conditions has to be true to complete
+#or => one condition has to be true to complete 
+#not => it is oposite then the reguale condition statements

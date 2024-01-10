@@ -12,10 +12,24 @@
 #     print("Sorry, you can't have a ride")
 
 
-number = int(input("Write a number "))
+# number = int(input("Write a number "))
 
 
-if number % 2 == 0:
-    print("This is the even number ")
+# if number % 2 == 0:
+#     print("This is the even number ")
+# else:
+#     print("This is the odd number ")
+
+
+#Nested if/else statement
+    
+number = int(input("what is your height"))
+
+if number >= 120:
+    age = int(input("what is your age"))
+    if age >= 10:
+        print("you can take the ride")
+    else:
+        print("you can't take the ride")
 else:
-    print("This is the odd number ")
+    print("you can't take the ride")

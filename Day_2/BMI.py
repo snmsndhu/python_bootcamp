@@ -5,4 +5,8 @@ new_height = float(height)
 weight = input("what is your weight ")
 new_weight = float(weight)
 
-BMI = print(new_weight / (new_height ** 2))
+BMI = new_weight / (new_height ** 2)
+
+Result = int(BMI)
+
+print(Result)

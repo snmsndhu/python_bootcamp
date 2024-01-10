@@ -7,6 +7,6 @@ new_weight = float(weight)
 
 BMI = new_weight / (new_height ** 2)
 
-Result = int(BMI)
+Result = round(BMI, 2)
 
 print(Result)

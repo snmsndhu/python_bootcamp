@@ -30,3 +30,13 @@ print(2 ** 6)
 #Division /
 #Addition +
 #Subtraction -
+
+# How to print different type of data types without changing them ?
+# We can use the f-string
+
+score = 0
+heigth = 1.8
+isWinning = True
+
+#f-string
+print(f"your score is {score}, your height is {heigth}, you are winnig is {isWinning}")

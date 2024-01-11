@@ -2,14 +2,20 @@ import random
 print("Welcome")
 
 game = ["ROCK", "PAPER", "SCISSORS"]
+game_length = len(game)
 
 player = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for scissors. \n "))
+
 print(f"you choose {game[player]}")
+
 
 computer = random.randint(1,2)
 print(f"computer choose {game[computer]}")
 
-if player == computer:
+
+if player > game_length:
+    print("wrong number")
+elif player == computer:
     print("Draw")
 elif player >= 3 or player < 0 :
     print("You Lose")

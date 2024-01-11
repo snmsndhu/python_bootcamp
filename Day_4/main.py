@@ -23,3 +23,13 @@ print(random_float)
 english_alphabetes = ["A", "B", "C"]
 
 print(english_alphabetes[1])
+
+#Nested Lists
+
+names = ["X", "A", "B", "C", "D", "Y", "Z"]
+
+english_alphabetes = ["A", "B", "C"]
+
+nested_list = [names, english_alphabetes]
+
+print(f"nested list {nested_list[1][1]}")

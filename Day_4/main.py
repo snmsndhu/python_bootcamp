@@ -13,3 +13,7 @@ print(random_int)
 float_random = random.random()
 
 print(float_random)
+
+random_float = random.random() * 5
+
+print(random_float)

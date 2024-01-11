@@ -15,4 +15,4 @@ for student in students:
 
 average_height = total_height / total_students
 
-print(round(average_height, 2))
+print(f"Average Height = {round(average_height, 2)}")

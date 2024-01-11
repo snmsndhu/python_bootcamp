@@ -17,3 +17,9 @@ print(float_random)
 random_float = random.random() * 5
 
 print(random_float)
+
+#Lists
+
+english_alphabetes = ["A", "B", "C"]
+
+print(english_alphabetes[1])

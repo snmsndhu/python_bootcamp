@@ -3,13 +3,13 @@
 import random
 word_list = ["ardvark", "baboon", "camel"]
 
-chosen_world = random.choice(word_list)
-print(chosen_world)
+chosen_word = random.choice(word_list)
+print(chosen_word)
 
-guess = input("Guess Your word \n").lower()
+guess = input("Guess your letter \n").lower()
 
 
-for world in chosen_world:
+for world in chosen_word:
     if world == guess:
         print("Right")
     else:

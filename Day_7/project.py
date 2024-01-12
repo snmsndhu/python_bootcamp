@@ -2,11 +2,13 @@
 
 import random
 word_list = ["ardvark", "baboon", "camel"]
+stages = ["1 chance", "2 chance", "3 chance", "4 chance", "5 chance" "Last chance"]
 
 chosen_word = random.choice(word_list)
 print(chosen_word)
 
 display = []
+total_lifes = 5
 
 for _ in chosen_word:
     display += "_"
@@ -23,7 +25,16 @@ while not end_game:
 
     print(display)
 
+  
+    # print(stages[1])
+    # stages[1] += 1
+    if total_lifes == 0:
+        end_game = True
+        print("you lost the game")
+    elif not guess == chosen_word:
+        total_lifes -= 1
+
     if "_" not in display:
-      end_game = True
-      print("you win")
+        end_game = True
+        print("you win")
    

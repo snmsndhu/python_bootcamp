@@ -20,3 +20,9 @@ my_function()
 #While loop 
 
 #It will continue going while a condition is true
+
+number = 5
+
+while number > 0:
+    print(number)
+    number -= 1

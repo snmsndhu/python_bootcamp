@@ -11,13 +11,19 @@ display = []
 for _ in chosen_word:
     display += "_"
 print(display)
-guess = input("Guess your letter \n").lower()
 
+end_game = False
 
-for position in range(len(chosen_word)):
-    letter = chosen_word[position]
-    if letter == guess:
-        display[position] = letter
+while not end_game:
+    guess = input("Guess your letter \n").lower()
+    for position in range(len(chosen_word)):
+        letter = chosen_word[position]
+        if letter == guess:
+            display[position] = letter
 
-print(display)
+    print(display)
+
+    if "_" not in display:
+      end_game = True
+      print("you win")
    

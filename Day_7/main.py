@@ -1,6 +1,6 @@
-#Handman Game
+#Hangman Game
 
-#We are going to Build a Handman Game. It will help to review the whole week learning.
+#We are going to Build a Hangman Game. It will help to review the whole week learning.
 
 
 #It will cover

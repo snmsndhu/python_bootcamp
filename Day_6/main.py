@@ -16,3 +16,7 @@ def my_function():
     print("bye")
 
 my_function()
+
+#While loop 
+
+#It will continue going while a condition is true

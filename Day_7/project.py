@@ -2,7 +2,7 @@
 
 import random
 word_list = ["ardvark", "baboon", "camel"]
-stages = ["1 chance", "2 chance", "3 chance", "4 chance", "5 chance" "Last chance"]
+stages = ["Last chance", "5 chance", "4 chance", "3 chance", "2 chance"]
 
 chosen_word = random.choice(word_list)
 print(chosen_word)
@@ -37,4 +37,5 @@ while not end_game:
     if "_" not in display:
         end_game = True
         print("you win")
-   
+
+    print(stages[total_lifes])

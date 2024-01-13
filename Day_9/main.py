@@ -14,7 +14,6 @@ print(dictionary["Bug"])
 #Adding new items to dictionary
 
 dictionary["Loop"] = "this is loop"
-
 print(dictionary)
 
 
@@ -24,5 +23,9 @@ empty_dic = {}
 #Wipe an existing dictionary
 
 dictionary = {}
+print(dictionary)
 
+#Edit an item in a dictionary
+
+dictionary["Bug"] = "new value"
 print(dictionary)

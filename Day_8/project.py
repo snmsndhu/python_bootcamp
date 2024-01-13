@@ -22,6 +22,22 @@ def encrypt(plain_text, shift_amount):
     new_letter = letters[new_position]
     encrypted_message += new_letter
   print(f"The encoded text is {encrypted_message}")
+
+
+text_decode = input("Type your message: \n").lower()
+shift_decode = int(input("Type the shift number: \n"))
+
+
+def decode(decode_text, shift_number_decode):
+  decode_message = ""
+  for char in decode_text:
+    letter_positon = letters.index(char)
+    new_position_decode = letter_positon - shift_number_decode
+    decode_message += letters[new_position_decode]
+  print(f"Your decode message is {decode_message}")
+
+
     
 
 encrypt(text, shift)
+decode(text_decode, shift_decode)

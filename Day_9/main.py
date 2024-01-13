@@ -29,3 +29,9 @@ print(dictionary)
 
 dictionary["Bug"] = "new value"
 print(dictionary)
+
+#Loop through a dictionary
+
+for key in dictionary:
+    print(key)
+    print(dictionary[key])

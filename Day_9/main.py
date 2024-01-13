@@ -35,3 +35,15 @@ print(dictionary)
 for key in dictionary:
     print(key)
     print(dictionary[key])
+
+
+#Nesting a List in a Dictionary 
+#Nesting Dictionary in a Dictionary
+    
+travel_log = {
+    "France": {"cities_visited":["Paris", "Lille", "Dijon"], "total_visits": 12},
+    "Germany": ["Berlin", "Hamburg", "Stuttgart"],
+}
+
+
+

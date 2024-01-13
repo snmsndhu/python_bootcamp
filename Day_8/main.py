@@ -19,3 +19,20 @@ def greet_with_argument(name):
     print("How are you")
 
 greet_with_argument("j")
+
+#Function with more than 1 input
+
+def greet_with(name, location):
+    print(f"Hello {name}")
+    print(f"Your address is {location}")
+
+greet_with("j", "124")
+
+#Function with keyword arguments
+
+def great_with(name, address):
+    print(f"Hello {name}")
+    print(f"Your address is {address}")
+
+
+great_with(name = "j", address= "1234")

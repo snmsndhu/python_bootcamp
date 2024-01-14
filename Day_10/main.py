@@ -27,3 +27,15 @@ def format_name(f_name, l_name):
 
 
 print(format_name("", ""))
+
+#Docstrings
+
+#This could be used to add multiline string and it can help to make documentation of any function 
+#or any other documentation in the app
+
+#all should be done to use it, is use """ """ and your doc inside it
+
+"""
+here we can type anthing and it will allow us use multiple
+line in it
+"""

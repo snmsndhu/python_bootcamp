@@ -1,7 +1,7 @@
 #Debugging
 ###### Everybody gets bugs in the coding ######
 
-#First Step to solve the problem is Describe the Problem.
+#1 First Step to solve the problem is Describe the Problem.
 
 #2 Second step to avoid Reproduction of the bug.
 
@@ -13,3 +13,10 @@
 
 #6 Use the Debugger
 
+#7 Take a Break
+
+#8 Ask a Friend
+
+#9 Run your code often in between the production
+
+#10 Ask StackOverflow

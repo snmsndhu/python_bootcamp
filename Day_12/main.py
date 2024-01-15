@@ -51,3 +51,12 @@ drink_potion()
 #That effects everything that we give a name
 #Example, if we define a function inside a funcion that function will be only accesiable 
 #with outside defined function
+
+
+"""
+Another point to notice is that if the varibale is defined in the loop
+or inside the if statement it has the global scope
+ """
+
+#So how to Modify a Global variable
+

@@ -79,3 +79,10 @@ def increase_enemies_return():
 
 enemies = increase_enemies_return()
 print(f"return statement {enemies}")
+
+
+#### Global Constants #####
+
+#Global constants are something that you never wanted to change at any time
+
+#Naming convention in python for the Global Constants is all upper case 

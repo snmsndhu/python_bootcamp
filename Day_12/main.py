@@ -70,3 +70,12 @@ def increase_enemies():
 increase_enemies()
 
 ### It is highly suggest that do not modifie a global variable in the function
+## So how can do it in right way
+
+#Lets have a look
+
+def increase_enemies_return():
+    return enemies + 4
+
+enemies = increase_enemies_return()
+print(f"return statement {enemies}")

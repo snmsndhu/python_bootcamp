@@ -24,7 +24,9 @@ print("I'm thinking of a number between 1 and 100")
 
 answer = random.randint(1, 100)
 
+turns = set_difficulty()
+print(f"You have {turns} attempts remaining to guess the number")
 guess = int(input("Make a guess"))
 
-turns = set_difficulty()
+
 

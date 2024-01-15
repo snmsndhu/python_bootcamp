@@ -4,11 +4,13 @@ import random
 easy_level_attempts = 10
 hard_level_attempts = 5
 
-def check_answer(guess, answer):
+def check_answer(guess, answer, turns):
     if guess > answer:
         print("Too high")
+        return turns - 1
     elif guess < answer:
         print("Too low")
+        return turns - 1
     else:
         print(f"You got it The answer was {answer}")
 
@@ -19,14 +21,21 @@ def set_difficulty():
     else:
         return hard_level_attempts
 
-print("Welcome to the number Guessing Game")
-print("I'm thinking of a number between 1 and 100")
+def game():
+    print("Welcome to the number Guessing Game")
+    print("I'm thinking of a number between 1 and 100")
 
-answer = random.randint(1, 100)
+    answer = random.randint(1, 100)
 
-turns = set_difficulty()
-print(f"You have {turns} attempts remaining to guess the number")
-guess = int(input("Make a guess"))
+    turns = set_difficulty()
+    guess = 0
+
+    while guess != answer:
+        print(f"You have {turns} attempts remaining to guess the number")
+
+        guess = int(input("Make a guess"))
+
+        check_answer(guess, answer, turns)
 
 
-
+game()

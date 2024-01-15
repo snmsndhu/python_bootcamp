@@ -42,3 +42,12 @@ def drink_potion():
 drink_potion()
 
 #It will print that global variable
+
+############ NameSpace #############
+
+#Anything that you give a name to has a namespace and that namespace is valid in
+#certain scopes
+#That mean local or global scopes are not only for the variables
+#That effects everything that we give a name
+#Example, if we define a function inside a funcion that function will be only accesiable 
+#with outside defined function

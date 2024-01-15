@@ -60,3 +60,13 @@ or inside the if statement it has the global scope
 
 #So how to Modify a Global variable
 
+enemies = 1
+
+def increase_enemies():
+    global enemies
+    enemies += 1
+    print(enemies)
+
+increase_enemies()
+
+### It is highly suggest that do not modifie a global variable in the function

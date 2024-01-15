@@ -35,7 +35,11 @@ def game():
 
         guess = int(input("Make a guess"))
 
-        check_answer(guess, answer, turns)
+        turns =  check_answer(guess, answer, turns)
+
+        if turns == 0:
+            print("You've run out of guesses, you lose.")
+            return
 
 
 game()

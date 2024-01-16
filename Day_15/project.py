@@ -20,7 +20,14 @@ def count_coins():
     return total
 
 
-
+def is_transaction_successful(money_received, drink_cost):
+    if money_received >= drink_cost:
+        global profit
+        profit += drink_cost
+        return True
+    else:
+        print("Not enough money")
+        return False
 
 while on:
     choice = input("What would you like? (espresso/latte/cappuccino): \n")

@@ -11,6 +11,17 @@ def resources_check(order_ingre):
             return False
     return True
 
+def count_coins():
+    print("Please insert coins.")
+    total = int(input("How many quarters?: ")) * 0.25
+    total += int(input("How many quarters?: ")) * 0.25
+    total += int(input("How many quarters?: ")) * 0.25
+    total += int(input("How many quarters?: ")) * 0.25
+    return total
+
+
+
+
 while on:
     choice = input("What would you like? (espresso/latte/cappuccino): \n")
     if choice == "off":
@@ -22,4 +33,5 @@ while on:
         print(f"Money: ${total_money}")
     else:
         drink = MENU[choice]
-        resources_check(drink["ingredients"])
+        if resources_check(drink["ingredients"]):
+            payment = count_coins()

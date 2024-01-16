@@ -21,7 +21,13 @@ and individual objects that are generated from that blueprint is called Object.
 ##Lets make our object using the blueprint(CLASS)
 ##We are going a use a libaray called TURTLE
 
-import turtle
-timmy = turtle.Turtle()
+from turtle import Turtle, Screen
+timmy = Turtle()
 
 print(timmy)
+timmy.shape("turtle")
+
+my_screen = Screen()
+print(my_screen.canvheight)
+my_screen.exitonclick()
+

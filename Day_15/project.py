@@ -22,12 +22,19 @@ def count_coins():
 
 def is_transaction_successful(money_received, drink_cost):
     if money_received >= drink_cost:
+        change = round(money_received - drink_cost, 2)
+        print(f"Here is ${change} in change.")
         global profit
         profit += drink_cost
         return True
     else:
         print("Not enough money")
         return False
+    
+def make_coffee(drink_name, order_ingredients):
+    for item in order_ingredients:
+        resources[item] -= order_ingredients[item]
+    print(f"Here is your {drink_name}")
 
 while on:
     choice = input("What would you like? (espresso/latte/cappuccino): \n")
@@ -42,3 +49,5 @@ while on:
         drink = MENU[choice]
         if resources_check(drink["ingredients"]):
             payment = count_coins()
+            if is_transaction_successful(payment, drink["cost"]):
+                make_coffee(choice, drink["ingredients"])

@@ -27,8 +27,15 @@ timmy = Turtle()
 print(timmy)
 timmy.shape("turtle")
 timmy.color("red")
+timmy.forward(90)
 
 my_screen = Screen()
 print(my_screen.canvheight)
 my_screen.exitonclick()
 
+##Python Packages
+
+#Packages are different from the modules
+##It is the whole bunch of code that is written by people and lots of file 
+#all packaged togther to achieve some sort of goal or purpose
+#Lets go to first exercise and have a look how it works

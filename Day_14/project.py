@@ -34,3 +34,8 @@ guess = input("Who has more followers? Type 'A' or 'B':").lower()
 a_follower_count = account_a["follower_count"]
 b_follower_count = account_b["follower_count"]
 is_correct = check_answer(guess, a_follower_count,b_follower_count)
+
+if is_correct:
+    print(f"You're right. Current Score: {score}")
+else:
+    print(f"Sorry, that's wrong. Final Score: {score}")

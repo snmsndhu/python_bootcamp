@@ -44,7 +44,22 @@ class Car:
         self.seats = seats
 
 """
-This is how we can set attributes in the class, we can as many attributes we want after the self keyword.
+This is how we can set attributes in the class, we can put as many attributes we want after the self keyword.
+__init__ is our constructor function over here, that is build in python.
 when we will use the CLASS car to create a object we can pass those attributes and
 it will be assigned to that attributes, that we have put in the CLASS
 """
+
+##Next point to cover in the CLASS is the Method.
+##When a function is attached to the CLASS, it is called Method.
+
+class Car: 
+    def __init__(self, seats):
+        self.seats = seats
+    def enter_race_mode(self):
+        self.seats = 2
+
+car = Car(5)
+print(car.seats)
+car.enter_race_mode()
+print(car.seats)

@@ -29,3 +29,11 @@ in python camelCase is rarely used.
 For everything else, rather then the CLASS, snake_case is used.
 """
 
+#So next thing is how we can create Attributes in the class
+
+##Attritutes are basically a variable.
+
+"""
+To do that we have to use the constructor.
+So how can use the constructor?
+"""

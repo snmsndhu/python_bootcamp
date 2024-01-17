@@ -5,5 +5,3 @@ class Question:
 
         
 
-new_question = Question("What is your name", "Jatt")
-print(new_question.text, new_question.answer)

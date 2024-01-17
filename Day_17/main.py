@@ -31,9 +31,20 @@ For everything else, rather then the CLASS, snake_case is used.
 
 #So next thing is how we can create Attributes in the class
 
-##Attritutes are basically a variable.
+##Attributes are basically a variable.
+#Attributes are the things  that the object have.
 
 """
 To do that we have to use the constructor.
 So how can use the constructor?
+let have a look in the example
+"""
+class Car:
+    def __init__(self, seats):
+        self.seats = seats
+
+"""
+This is how we can set attributes in the class, we can as many attributes we want after the self keyword.
+when we will use the CLASS car to create a object we can pass those attributes and
+it will be assigned to that attributes, that we have put in the CLASS
 """

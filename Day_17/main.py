@@ -13,4 +13,19 @@ class User:
 
 user_1 = User()
 
+#For the name a class we have to use the PascalCase
+"""
+So what is the PascalCase ?
+First letter capital of the single word.
+
+There are other two naming conventions.
+
+camelCase
+snake_case
+
+it is same as the i wrote there names, that is the way to name them
+
+in python camelCase is rarely used.
+For everything else, rather then the CLASS, snake_case is used.
+"""
 

@@ -13,11 +13,12 @@ def random_color():
 
 tim.speed("fastest")
 
-for _ in range(100):
-    tim.color(random_color())
-    tim.circle(100)
-    tim.setheading(tim.heading() + 10)
+def draw(size):
+    for _ in range(int(360 / size)):
+        tim.color(random_color())
+        tim.circle(100)
+        tim.setheading(tim.heading() + size)
 
-
+draw(5)
 screen = t.Screen()
 screen.exitonclick()

@@ -37,3 +37,9 @@ import turtle
 from turtle import Turtle
 
 #this is the way import a single method from a module
+
+#How we can remain a module in our files
+
+import turtle as t
+
+#this is the way to rename the any module in your import

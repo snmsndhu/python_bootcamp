@@ -56,4 +56,7 @@ Each of the items that go in the Tuples are ordered.
 
 So the question is why we should use Tuples, if we have list?
 answer is we can'nt change the values of the Tuples. As can do in the List
+
+It can not be changed. It is immutable.
+we use Tuple when we want to stay constant, we do not want to change it any point by anybody.
 """

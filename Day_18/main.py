@@ -45,3 +45,15 @@ import turtle as t
 #this is the way to rename the any module in your import
 
 #Not all the module comes build in with python, we have to install some of them.
+
+
+#### Python Tuples #####
+
+"""
+So what is Tuples?
+Tuples are the Data type in the python which are (1, 2, 3) in the python.
+Each of the items that go in the Tuples are ordered.
+
+So the question is why we should use Tuples, if we have list?
+answer is we can'nt change the values of the Tuples. As can do in the List
+"""

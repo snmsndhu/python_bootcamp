@@ -5,7 +5,11 @@ import random
 
 turtle_module.colormode(255)
 
+
 tim = turtle_module.Turtle()
+tim.speed("fastest")
+tim.penup()
+tim.hideturtle()
 color_list = [(236, 35, 108), 
  (221, 231, 238), (145, 28, 66), (230, 237, 232), 
  (239, 75, 36), (7, 148, 95), (222, 170, 45), 
@@ -20,7 +24,7 @@ tim.setheading(0)
 number_of_dots = 100
 
 
-for dot_count in range(1, number_of_dots):
+for dot_count in range(1, number_of_dots + 1):
     tim.dot(20, random.choice(color_list))
     tim.forward(50)
 

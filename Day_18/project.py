@@ -1,17 +1,9 @@
 #The Hirst Painting Project
 
-# import colorgram
+import turtle as turtle_module
 
-# rgb_colors = []
-# colors = colorgram.extract('image.jpg', 20)
-# for color in colors:
-#     r = color.rgb.r
-#     g = color.rgb.g
-#     b = color.rgb.b
-#     new_color = (r,g,b)
-#     rgb_colors.append(new_color)
+tim = turtle_module.Turtle()
 
-# print(rgb_colors)
 color_list = [(236, 35, 108), 
  (221, 231, 238), (145, 28, 66), (230, 237, 232), 
  (239, 75, 36), (7, 148, 95), (222, 170, 45), 

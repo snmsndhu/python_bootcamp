@@ -43,3 +43,5 @@ from turtle import Turtle
 import turtle as t
 
 #this is the way to rename the any module in your import
+
+#Not all the module comes build in with python, we have to install some of them.

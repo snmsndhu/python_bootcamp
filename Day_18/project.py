@@ -1,18 +1,18 @@
 #The Hirst Painting Project
 
-import colorgram
+# import colorgram
 
-rgb_colors = []
-colors = colorgram.extract('image.jpg', 20)
-for color in colors:
-    r = color.rgb.r
-    g = color.rgb.g
-    b = color.rgb.b
-    new_color = (r,g,b)
-    rgb_colors.append(new_color)
+# rgb_colors = []
+# colors = colorgram.extract('image.jpg', 20)
+# for color in colors:
+#     r = color.rgb.r
+#     g = color.rgb.g
+#     b = color.rgb.b
+#     new_color = (r,g,b)
+#     rgb_colors.append(new_color)
 
-print(rgb_colors)
-[(236, 35, 108), 
+# print(rgb_colors)
+color_list = [(236, 35, 108), 
  (221, 231, 238), (145, 28, 66), (230, 237, 232), 
  (239, 75, 36), (7, 148, 95), (222, 170, 45), 
  (183, 158, 47), (44, 191, 232), (28, 127, 194), 

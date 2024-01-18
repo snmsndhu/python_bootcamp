@@ -11,7 +11,13 @@ def random_color():
     color = (r, g, b)
     return color
 
-
-directions = [0, 90, 180, 270]
-tim.pensize(15)
 tim.speed("fastest")
+
+for _ in range(100):
+    tim.color(random_color())
+    tim.circle(100)
+    tim.setheading(tim.heading() + 10)
+
+
+screen = t.Screen()
+screen.exitonclick()

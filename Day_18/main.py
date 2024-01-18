@@ -60,3 +60,13 @@ answer is we can'nt change the values of the Tuples. As can do in the List
 It can not be changed. It is immutable.
 we use Tuple when we want to stay constant, we do not want to change it any point by anybody.
 """
+
+##### RGB colours ####
+"""
+What is the RGB colours?
+Red Green Blue, that is the full form  of the RGB color.
+
+Basically we can generate any color using the RGB color, just we have to put in the values,
+for each of the element for eg. rgb(255, 200, 255). 
+It will generate you a color.
+"""

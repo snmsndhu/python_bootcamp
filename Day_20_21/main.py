@@ -34,3 +34,15 @@ The call to super() in the initialiser is recommended, but not strictly required
 """
 
 #We will also cover the SLICING.
+
+"""
+If we want to hold a small section of the list, we can use the Slice to slice the
+list and use it latter on.
+so how we can implement it =>
+
+suppose we have list of the piano keys and we want to slice some part of it.
+syntax will be =>
+
+piano_keys[2:5]
+
+"""

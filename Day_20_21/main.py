@@ -29,6 +29,8 @@ class Fish(Animal):
 Over here we are inherting from the Class Animal in the Fish Class.
 and we have to add super().__init__() inside the Class to inherit all the attribute
 and the methods of the Animal Class in the Fish Class.
+
+The call to super() in the initialiser is recommended, but not strictly required.
 """
 
 #We will also cover the SLICING.

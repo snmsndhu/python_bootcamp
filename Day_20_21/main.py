@@ -45,4 +45,13 @@ syntax will be =>
 
 piano_keys[2:5]
 
+so we have one another very useful trick to make to which is called Neat Trick.
+
+so what it does in slicing ?
+
+piano_keys(::-1)
+
+it will reverse the list for us.
+It is very help full in solving different type of coding problems.
+This method also works with tuple.
 """

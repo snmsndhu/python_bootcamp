@@ -36,9 +36,13 @@ with open("my_file.txt") as file:
 
 """
 Lets see how we can write in the file
-afte opening the file with (with keyword) we have to mention the method in the 
+after opening the file with (with keyword) we have to mention the method in the 
 open function, that we want to write in this file.
 Lets have a look in the syntax.
+
+With the "w" mode we can also create a new file, ex. if the name that we have mentioned in the 
+open function and that file does not exist, its going to create that file and write the text 
+that you have mentioned in the write function.
 """
 
 with open("my_file.txt", mode = "w") as file:

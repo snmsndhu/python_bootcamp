@@ -19,3 +19,11 @@ def average(list):
     print(aver)
 
 average(temp_list)
+
+#We can also use the pandas methods to find the average.
+
+print(data["temp"].mean())
+
+#mean() is pandas method
+
+#There are lot of other methods as well, check the pandas libary for it.

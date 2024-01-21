@@ -57,3 +57,27 @@ the method instead of the "w".
 
 with open("my_file.txt", mode = "a") as file:
     file.write("New Text.")
+
+
+#### File Path #####
+    
+"""
+so how  we have reach a file, that is in different folder?
+
+Absolute File Path
+That file path starts from the top the folder directory.
+
+Relative File Path
+Its start from the folder that you are in andn trying to access to file and same folder.
+
+so how we can go in the folder in both Paths.
+/folder1/folder2/file.py
+
+so how we go outside the folder to select the file that is in other folder.
+
+we can use ../folder1/
+
+that we put us one folder up, if we want to go up two folders,
+we can simply use 
+../../folder1
+"""

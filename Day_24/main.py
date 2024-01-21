@@ -33,3 +33,23 @@ file here will the variable name.
 with open("my_file.txt") as file:
     contents = file.read()
     print(contents)
+
+"""
+Lets see how we can write in the file
+afte opening the file with (with keyword) we have to mention the method in the 
+open function, that we want to write in this file.
+Lets have a look in the syntax.
+"""
+
+with open("my_file.txt", mode = "w") as file:
+    file.write("New Text.")
+
+"""
+This will delete everything in the file and add the new text, that we will pass in it.
+    
+But if you want to edit the text, instead to delete the old text, all we have to do is just put "a" in
+the method instead of the "w".
+"""
+
+with open("my_file.txt", mode = "a") as file:
+    file.write("New Text.")

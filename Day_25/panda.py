@@ -27,3 +27,18 @@ print(data["temp"].mean())
 #mean() is pandas method
 
 #There are lot of other methods as well, check the pandas libary for it.
+
+print(data["temp"].max())
+
+#How to get to the coloums
+
+print(data["condition"])
+
+"""
+That is the one way, but there is another way for doing it.
+Behind the scenes panda converts all the coloums into the attributes.
+so all we have to do is just get the same as we get the attributes.
+"""
+
+
+print(data.condition)

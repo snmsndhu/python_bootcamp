@@ -42,3 +42,15 @@ so all we have to do is just get the same as we get the attributes.
 
 
 print(data.condition)
+
+##How to get in the Row
+
+print(data[data.day == "Monday"])
+
+print(data[data.temp == data.temp.max()])
+
+monday = data[data.day == "Monday"]
+monday_temp = monday.temp
+monday_temp_f = monday_temp * 9/5 + 32
+print(monday_temp_f)
+

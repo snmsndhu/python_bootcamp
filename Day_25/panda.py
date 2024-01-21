@@ -13,4 +13,9 @@ print(data_dictinoary)
 # Series is basically a coloum.
 
 temp_list = data["temp"].to_list()
-print(temp_list)
+
+def average(list):
+    aver = sum(list) / len(list)
+    print(aver)
+
+average(temp_list)

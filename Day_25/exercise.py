@@ -1,10 +1,10 @@
 ## Printing the data from the CSV files
 
-# with open("weather_data.csv") as data:
-#     data_list = data.readlines()
+with open("weather_data.csv") as data:
+    data_list = data.readlines()
 
 
-# print(data_list)
+print(data_list)
 
 
 
@@ -27,8 +27,19 @@ with open("weather_data.csv") as data:
     data_list = csv.reader(data)
     temperatures = []
     for row in  data_list:
-        temp = row[1]
-        temperatures.append(temp)
+        if row[1] != "temp":
+            temp = int(row[1])
+            temperatures.append(temp)
     print(temperatures)
 
 
+"""
+There is one another way more efficent way to do this.
+we are going to use the python library Panda.
+First we have to install it.
+"""
+
+import pandas
+
+data = pandas.read_csv("weather_data.csv")
+print(data["temp"])

@@ -68,7 +68,7 @@ Absolute File Path
 That file path starts from the top the folder directory.
 
 Relative File Path
-Its start from the folder that you are in andn trying to access to file and same folder.
+Its start from the folder that you are in and trying to access to file and same folder.
 
 so how we can go in the folder in both Paths.
 /folder1/folder2/file.py

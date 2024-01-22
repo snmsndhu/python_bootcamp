@@ -12,9 +12,21 @@ window = tkinter.Tk()
 window.title("My First GUI program")
 window.minsize(width=500, height=300)
 
-
+my_label = tkinter.Label(text="I am a Label", font=("Arial", 24, "bold"))
+my_label.pack()
 
 
 
 
 window.mainloop()
+
+"""
+Lets talk about Advance arguments bit more, in order to specify wider range of input.
+We know how keyword arguments works.
+In python we can create arguments that have default values. we can do this by simple giving default
+values to the arguments, when we define a function. When we call this function, we dont need to provide any
+values to the arguments.
+But if we want to give a custom value to any of the argument, we can simply do that by giving it,
+when we are calling the function.
+
+"""

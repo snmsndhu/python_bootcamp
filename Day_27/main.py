@@ -80,3 +80,13 @@ def calcuate(n, **kwargs):
     print(n)
 
 calcuate(2, add = 3, multiply = 5)
+
+#So, how we can make a class using the Keyword Arguments
+
+class Car:
+
+    def __init__(self, **kw):
+        self.make = kw["make"]
+        self.model = kw["model"]
+
+my_car = Car()

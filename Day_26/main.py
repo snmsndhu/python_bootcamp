@@ -4,7 +4,13 @@ This is something which is very unique in the Python, and it will help
 us to really cut down lot of code that we have to write when we are working,
 with the List and Dictionary.
 
-List Comprehensions
+"""
+
+
+
+####  List Comprehensions ####
+
+"""
 
 So, the big topic to explore is List Comprehension.
 This is something very unique in Python.
@@ -26,5 +32,11 @@ number = [1,2,3]
 so here is the way how we do it =>
 
 new_list = [n + 1 for n in numbers]
+
+This will give us 
+
+new_list = [2,3,4]
+
+It can also be used to other variable types. Like Strings
 
 """

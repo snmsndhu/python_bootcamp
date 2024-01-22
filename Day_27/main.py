@@ -45,7 +45,26 @@ def add(*args):
    for n in args:
    print(n)
 
+This is basically a tuple that we are passing, asterix(*) collects all of the arguments into a tuple.
+By this we can provide as many values we want to provide to one arguments.
    
 This function will take as many positional arguments you can provide.
 """
 
+#Unlimited Keyword Arguments
+
+"""
+In this we can provide as many arguments to the function without defining them, in the function when we are creating it.
+
+Basically its syntax will look like this =>
+
+def calculate(**kwargs):
+    print(kwargs)
+
+All we have to do is add double ** to the function and then just pass in the name which is kwargs used by most of developers,
+but it could be anything, totally depends on the developer.
+
+After defining the function when we are calling it, we can provide as many keyword arguments in the function.
+calculate(add = 3, multi = 5)
+
+"""

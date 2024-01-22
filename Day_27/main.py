@@ -38,7 +38,7 @@ when we are calling the function.
 
 """
 So, how we can make our function to take unlimited numbers of arguments?
-This is pretty easy all we have to do is pass the *args in the arguments and it will take unlimited 
+This is pretty easy all we have to do is pass the * before the argument name in the arguments and it will take unlimited 
 number of arguments.
 This is how it will look like =>
 def add(*args):

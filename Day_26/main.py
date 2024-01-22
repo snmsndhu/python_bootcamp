@@ -12,5 +12,19 @@ This is something very unique in Python.
 So, what is List Comprehensions ?
 This is way to create a new List from the previous List.
 
+so how we will write our code?
+
+new_list = [new_list for item in list_name]
+
+its so easy to use it.
+
+Suppose we have a list of number and we want to make a new list of numbers,
+and in new list we want to add the 1 in each number.
+
+number = [1,2,3]
+
+so here is the way how we do it =>
+
+new_list = [n + 1 for n in numbers]
 
 """

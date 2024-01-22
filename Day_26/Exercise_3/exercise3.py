@@ -10,6 +10,6 @@ with open("file2.txt") as second_list:
     second_content = second_list.readlines()
     
 
-result = [num for num in first_content if first_content[num] == second_content[num]]
+result = [int(num) for num in first_content if num in second_content]
 
 print(result)

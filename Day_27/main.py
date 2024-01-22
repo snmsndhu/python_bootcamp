@@ -86,7 +86,10 @@ calcuate(2, add = 3, multiply = 5)
 class Car:
 
     def __init__(self, **kw):
-        self.make = kw["make"]
-        self.model = kw["model"]
+        self.make = kw.get("make")
+        self.model = kw.get("model")
 
+#We are using the get() method to get the values from the kw dictionary and the reason why we are using it
+        #because it will prevent the error that would have produced if we have used the [] and did not pass 
+        #any argument while calling the Class.
 my_car = Car()

@@ -67,4 +67,6 @@ but it could be anything, totally depends on the developer.
 After defining the function when we are calling it, we can provide as many keyword arguments in the function.
 calculate(add = 3, multi = 5)
 
+It will make dictionary of the all passed keyword arguments. This dictionary will represents the key and value of the argument,
+that we have passed in the function.
 """

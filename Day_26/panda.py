@@ -18,3 +18,8 @@ student_data_frame = pandas.DataFrame(student_dict)
 
 for(key, value) in student_data_frame.items():
     print(key)
+
+#this was the simple method, we have'nt used the pandas yet, lets use them now.
+    
+for(index, row) in student_data_frame.iterrows():
+    print(row)

@@ -20,6 +20,9 @@ my_label.pack()
 
 window.mainloop()
 
+
+#Advanced Arguments
+
 """
 Lets talk about Advance arguments bit more, in order to specify wider range of input.
 We know how keyword arguments works.
@@ -29,4 +32,19 @@ values to the arguments.
 But if we want to give a custom value to any of the argument, we can simply do that by giving it,
 when we are calling the function.
 
+"""
+
+#Unlimited Arguments
+
+"""
+So, how we can make our function to take unlimited numbers of arguments?
+This is pretty easy all we have to do is pass the *args in the arguments and it will take unlimited 
+number of arguments.
+This is how it will look like =>
+def add(*args):
+   for n in args:
+   print(n)
+
+   
+This function will take as many arguments you can provide.
 """

@@ -63,9 +63,19 @@ we have to add the if test with the old syntax to create it.
 
 """
 Lets have a look on Dictionary Comprehension.
-It allows us to create a new Dictionary from the values of the in the list or in a dictionary.
+It allows us to create a new Dictionary from the values of the in the list or in a dictionary,
+by just using the shortern syntax.
 
 Its syntax is =>
 
 new_dict = {new_key: new_value for item in list}
+
+this is the simplest form of Dictinary Comprehension.
+
+We can take this one step further, we can also create a new dictionary based on the values in an 
+existing dictionary.
+
+That how we will do it.
+
+new_dict = {new_key: new_value for (key, value) in dict.itmes()}
 """

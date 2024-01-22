@@ -34,17 +34,18 @@ when we are calling the function.
 
 """
 
-#Unlimited Arguments
+#Unlimited Positional Arguments
 
 """
-So, how we can make our function to take unlimited numbers of arguments?
+So, how we can make our function to take unlimited numbers of positional arguments?
 This is pretty easy all we have to do is pass the * before the argument name in the arguments and it will take unlimited 
-number of arguments.
+number of positional arguments.
 This is how it will look like =>
 def add(*args):
    for n in args:
    print(n)
 
    
-This function will take as many arguments you can provide.
+This function will take as many positional arguments you can provide.
 """
+

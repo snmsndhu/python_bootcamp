@@ -78,4 +78,10 @@ existing dictionary.
 That how we will do it.
 
 new_dict = {new_key: new_value for (key, value) in dict.itmes()}
+
+Now we are looping through each of the keys and each of the values in all of the items from the dictionary,
+and we can use them to create  new key and new value, and if we want to go one step further, we can also
+add the condition in it.
+
+new_dict = {new_key: new_value for (key, value) in dict.items() if test}
 """

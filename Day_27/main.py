@@ -70,3 +70,13 @@ calculate(add = 3, multi = 5)
 It will make dictionary of the all passed keyword arguments. This dictionary will represents the key and value of the argument,
 that we have passed in the function.
 """
+
+#Lets build a little complex example to understand it.
+
+def calcuate(n, **kwargs):
+    print(kwargs)
+    n += kwargs["add"]
+    n *= kwargs["multiply"]
+    print(n)
+
+calcuate(2, add = 3, multiply = 5)

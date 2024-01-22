@@ -40,3 +40,20 @@ new_list = [2,3,4]
 It can also be used to other variable types. Like Strings
 
 """
+
+"""
+Conditonal List Comprehension
+
+It allow us to add the test in the List comprehension method.
+
+Here is the syntax for it.
+
+new_list = [new_list for item in list_name if test]
+
+we have to add the if test with the old syntax to create it.
+
+"""
+
+#In Python list, range, string, tuple they called sequences because they have
+#specific order and when you perform a list comprehension, its going to take that
+#sequence and it's goint to go through in order.

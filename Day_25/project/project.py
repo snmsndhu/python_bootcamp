@@ -11,10 +11,12 @@ all_states = data.state.to_list()
 guessed_states = []
 
 while len(guessed_states) < 50:
-    answer_state = screen.textinput(title="Guess the State", prompt="What's another state's name")
+    answer_state = screen.textinput(title=f"{len(guessed_states)}/50 states correct", 
+                                    prompt="What's another state's name").title()
     print(answer_state)
-    
+
     if answer_state in all_states:
+        guessed_states.append(answer_state)
         t = turtle.Turtle()
         t.hideturtle()
         t.penup()

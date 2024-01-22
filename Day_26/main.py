@@ -57,3 +57,15 @@ we have to add the if test with the old syntax to create it.
 #In Python list, range, string, tuple they called sequences because they have
 #specific order and when you perform a list comprehension, its going to take that
 #sequence and it's goint to go through in order.
+
+
+##### Dictionary Comprehension ####
+
+"""
+Lets have a look on Dictionary Comprehension.
+It allows us to create a new Dictionary from the values of the in the list or in a dictionary.
+
+Its syntax is =>
+
+new_dict = {new_key: new_value for item in list}
+"""

@@ -9,6 +9,7 @@ FONT_NAME = "Courier"
 WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
+reps = 0
 
 # ---------------------------- TIMER RESET ------------------------------- # 
 
@@ -42,6 +43,11 @@ def count_down(count):
         window.after(1000, count_down, count - 1)
 
 def start_timer():
+    global reps
+    work_sec = WORK_MIN * 60
+    short_break_sec = short_break_sec * 60
+    long_break_sec = LONG_BREAK_MIN * 60
+    
     count_down(5 * 60)
 
 start_button = Button(text="Start", command=start_timer, highlightthickness=0)

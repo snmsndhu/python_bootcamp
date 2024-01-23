@@ -4,6 +4,12 @@
 
 from tkinter import *
 
+def button_clicked():
+    new_text = input.get()
+    my_label.config(text=new_text)
+
+    print("I got clicked")
+
 window = Tk()
 window.title("My First GUI program")
 window.minsize(width=500, height=300)
@@ -13,13 +19,6 @@ my_label.pack()
 
 my_label["text"] = "New Text"
 my_label.config(text="New Text")
-
-def button_clicked():
-    new_text = input.get()
-    my_label.config(text=new_text)
-
-    print("I got clicked")
-
 
 button = Button(text = "Click me", command=button_clicked)
 button.pack()

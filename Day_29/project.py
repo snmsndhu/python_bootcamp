@@ -1,3 +1,6 @@
+from tkinter import *
+from tkinter import messagebox
+
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
@@ -5,16 +8,21 @@ def save():
     website_name = website_input.get()
     email = email_input.get()
     website_password = password_input.get()
-    with open("data.txt", mode= "a") as data_file:
-        data_file.write(f"{website_name} | {email} | {website_password} \n")
-        website_input.delete(0, END)
-        password_input.delete(0, END)
+    if len(website_name) == 0 or len(website_password) == 0:
+        messagebox.showinfo(title="Oops", message="Please make sure you haven't left any fields empty.")
+    else:
+        is_ok = messagebox.askokcancel(title= website_name, message=f"These are the details entered: \nEmail: {email} \nPassword: {website_password} \n Is it ok to save ?")
+        if is_ok:
+            with open("data.txt", mode= "a") as data_file:
+                data_file.write(f"{website_name} | {email} | {website_password} \n")
+                website_input.delete(0, END)
+                password_input.delete(0, END)
 
 
     
 # ---------------------------- UI SETUP ------------------------------- #
 
-from tkinter import *
+
 
 window = Tk()
 window.title("Password Manager")

@@ -17,6 +17,8 @@ Handling Erros & Exceptions
   Fourth line (finally) will always going to be executed. Does not matter what happens in other 3 line of code.
 
   We also have (raise) keyword to raise our own errors.
+
+  Only use this when we don't have a simple solution for it or it really needs it.
 """
 
 try: 

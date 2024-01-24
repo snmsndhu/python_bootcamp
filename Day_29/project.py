@@ -38,13 +38,23 @@ def save():
     if len(website_name) == 0 or len(website_password) == 0:
         messagebox.showinfo(title="Oops", message="Please make sure you haven't left any fields empty.")
     else:
-        with open("data.json", mode= "r") as data_file:
-            data = json.load(data_file)
+        try:
+            with open("data.json", mode= "r") as data_file:
+                data = json.load(data_file)
+        except:
+            with open("data.json", mode= "w") as data_file:
+                json.dump(data, data_file, indent=4)
+        else:
             data.update(new_data)
-        with open("data.json", mode= "w") as data_file:
-            json.dump(data, data_file, indent=4)
+            with open("data.json", mode= "w") as data_file:
+                json.dump(data, data_file, indent=4)
+        finally:
             website_input.delete(0, END)
             password_input.delete(0, END)
+        
+            
+
+
 
 
     

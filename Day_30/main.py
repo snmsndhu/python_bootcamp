@@ -15,6 +15,8 @@ Handling Erros & Exceptions
   Second line (except) is the code that you want to be executed if there is exception.
   Third line (else) will executed if there is no errors in your (try).
   Fourth line (finally) will always going to be executed. Does not matter what happens in other 3 line of code.
+
+  We also have (raise) keyword to raise our own errors.
 """
 
 try: 

@@ -52,7 +52,14 @@ def save():
             website_input.delete(0, END)
             password_input.delete(0, END)
         
-            
+# ---------------------------- FIND PASSWORD ------------------------------- #
+
+def find_password(website_name):
+    website_name = website_input.get()
+    with open("data.json",  "r") as data_file:
+        data_file[website_name]
+        print(data_file)
+
 
 
 
@@ -81,8 +88,8 @@ email_label.grid(column=0, row=2)
 password_label = Label(text="Password:")
 password_label.grid(column=0, row=3)
 
-website_input = Entry(width=35)
-website_input.grid(row=1, column=1, columnspan=2)
+website_input = Entry(width=18)
+website_input.grid(row=1, column=1)
 website_input.focus()
 
 email_input = Entry(width=35)
@@ -93,6 +100,9 @@ password_input.grid(row=3, column=1)
 
 generate_button = Button(text="Generate Password", command=generate_password)
 generate_button.grid(column=2, row=3)
+
+search_button = Button(text="Search", width=13, command=find_password )
+search_button.grid(row=1, column=2)
 
 add_button = Button(text="Add", width=36, command= save)
 add_button.grid(column=1,columnspan=2, row=4)

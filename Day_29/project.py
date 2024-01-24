@@ -43,7 +43,7 @@ def save():
                 data = json.load(data_file)
         except:
             with open("data.json", mode= "w") as data_file:
-                json.dump(data, data_file, indent=4)
+                json.dump(new_data, data_file, indent=4)
         else:
             data.update(new_data)
             with open("data.json", mode= "w") as data_file:

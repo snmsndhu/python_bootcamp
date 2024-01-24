@@ -34,3 +34,16 @@ else:
 finally:
     file.close()
     print("File was closed")
+
+
+"""
+JSON Data
+  JSON is the javascript object notation, which was origanlly build for the java script,
+  but because of its simple and use design it was adopted by many other languages.
+  It is basically a dictionaries and lists.
+
+  Python has many build in methods for JSON.
+  Write => json.dump()
+  Read => json.load()
+  Update => json.update()
+"""

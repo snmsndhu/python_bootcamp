@@ -12,3 +12,6 @@ with smtplib.SMTP("smt.email.com") as connection:
         msg= "Subject: Hello \n\nThis is the body of my email.")
 
     connection.close()
+
+
+

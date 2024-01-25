@@ -21,3 +21,16 @@ which stands for Simple Mail Transfer Protocal
 This contains all of the rules that determines how email can be sent by the internet.
 It is basically the postman.
 """
+
+#Let have a look on some of the methods of Datetime module
+
+import datetime as dt
+
+now = dt.datetime.now()
+year = now.year
+month = now.month
+day_of_week = now.weekday()
+print(day_of_week)
+
+date_of_birth = dt.datetime(year=1234, month=22, day=33)
+print(date_of_birth)

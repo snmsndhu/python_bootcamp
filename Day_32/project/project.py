@@ -1,3 +1,5 @@
+#Automated Birthday Wisher Project
+
 import smtplib
 
 my_email = "email_address"

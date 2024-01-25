@@ -51,4 +51,5 @@ what does it mean. eg =>
 APIs also have the Parameters
 This is something which also us to give a input when we are making API request, so we can get different pieces,
 of data back, depending on the input, same as the functions.
+Not all have the Parameters.
 """

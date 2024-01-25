@@ -22,15 +22,15 @@ if today_tuple in birthdays_dict:
         content = letter_file.read()
         content.replace("[NAME]", birthday_person["name"])
 
-with smtplib.SMTP("smt.email.com") as connection:
-    connection.starttls()
-    connection.login(user=MY_EMAIL, password=MY_PASSWORD)
-    connection.sendmail(
-        from_addr=MY_EMAIL,
-        to_addrs="rec@email.com",
-        msg= "Subject: Hello \n\nThis is the body of my email.")
+    with smtplib.SMTP("smt.email.com") as connection:
+        connection.starttls()
+        connection.login(user=MY_EMAIL, password=MY_PASSWORD)
+        connection.sendmail(
+            from_addr=MY_EMAIL,
+            to_addrs=birthday_person["email"],
+            msg= f"Subject: Happy Birthday \n\n{content}")
 
-    connection.close()
+        
 
 
 

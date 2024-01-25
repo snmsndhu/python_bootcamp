@@ -42,4 +42,5 @@ what does it mean. eg =>
 2xx = Here you go
 3xx = Go away
 4xx = You screwed up
+5xx = I Screwed up
 """

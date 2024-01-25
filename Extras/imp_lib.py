@@ -6,3 +6,9 @@ paperclip
 This is very useful library which we can use to auto copy something from the 
 input tab and paste it latter on.
 """
+
+"""
+SMPT
+
+This is used to send automated emails
+"""

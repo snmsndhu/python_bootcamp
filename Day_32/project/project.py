@@ -20,7 +20,7 @@ if today_tuple in birthdays_dict:
 
     with open(file_path) as letter_file:
         content = letter_file.read()
-        content.replace("[NAME]", birthday_person["name"])
+        content = content.replace("[NAME]", birthday_person["name"])
 
     with smtplib.SMTP("smt.email.com") as connection:
         connection.starttls()

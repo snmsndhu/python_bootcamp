@@ -23,3 +23,9 @@ This is the module that is used to get the current datetime.
 This is preloaded module.
 
 """
+
+"""
+Requests
+
+It is an APIs lib for using the methods of APIs.
+"""

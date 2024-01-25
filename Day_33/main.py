@@ -35,3 +35,11 @@ That normally its URL.
 """
 its basically trying to get some data from the server endpoint.
 """
+"""
+API request will give us a response and we can tell by just watching the first number,
+what does it mean. eg =>
+1xx = Hold on
+2xx = Here you go
+3xx = Go away
+4xx = You screwed up
+"""

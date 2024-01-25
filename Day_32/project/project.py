@@ -3,6 +3,10 @@
 import smtplib
 import pandas
 from datetime import datetime
+import random
+
+MY_EMAIL = "email_address"
+MY_PASSWORD = "password"
 
 today = datetime.now()
 today_tuple = (today.month, today.day)
@@ -10,9 +14,13 @@ today_tuple = (today.month, today.day)
 data = pandas.read_csv("birthdays.csv")
 
 birthdays_dict = {(data_row["month"], data_row["day"]): data_row for (index, data_row) in data.iterrows()}
+if today_tuple in birthdays_dict:
+    birthday_person = birthdays_dict[today_tuple]
+    file_path = f"letter_templates/letter_{random.randint(1,2)}.txt"
 
-MY_EMAIL = "email_address"
-MY_PASSWORD = "password"
+    with open(file_path) as letter_file:
+        content = letter_file.read()
+        content.replace("[NAME]", birthday_person["name"])
 
 with smtplib.SMTP("smt.email.com") as connection:
     connection.starttls()

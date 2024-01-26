@@ -12,5 +12,6 @@ They provide API keys.
 
 What are the API Keys ?
 
-This is most likely your personal accound number or password.
+This is most likely your personal accound number or password. This is the way by API provide can track,
+how much you are using their API key and they can deny your access over your limit.
 """

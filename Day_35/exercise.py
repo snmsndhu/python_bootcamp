@@ -1,10 +1,14 @@
 import requests
 import os
 from dotenv import load_dotenv
+from twilio.rest import Client
 load_dotenv("../.env")
 MY_LAT = 56.130367
 MY_LONG = -106.346771
 API_KEY = os.environ["OPEN_WEATHER_API"]
+
+account_sid = os.environ['TWILIO_ACCOUNT_SID']
+auth_token = os.environ['TWILIO_AUTH_TOKEN']
 
 parameters = {
     "lat": MY_LAT,
@@ -23,7 +27,10 @@ for hour_data in data["list"]:
         will_rain = True
 
 if will_rain:
-    print("Bring an umbrella.")
-else:
-    print("It will be not raining")
-        
+    client = Client(account_sid, auth_token)
+    message = client.messages.create(
+                              from_='FROM_NUMBER',
+                              body='Hi there',
+                              to='TO_NUMBER'
+                          )
+    print(message.status)     

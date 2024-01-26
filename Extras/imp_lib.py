@@ -29,4 +29,9 @@ Requests
 
 It is an APIs lib for using the methods of APIs.
 python -m pip install requests
+
+
+dotenv
+
+pip install python-dotenv
 """

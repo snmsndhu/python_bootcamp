@@ -5,13 +5,16 @@ GET
  request.get()
 
 POST
-  In post request we give external system some sort of data.
+  In POST request we give external system some sort of data.
   request.post()
 
 PUT
+ In PUT we simple update the some sort of data in external system.
+ request.put()
 
 
 DELETE
-
+ In DELETE we simple delete the data that already exists in the external system.
+ request.delete()
 
 """

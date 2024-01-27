@@ -18,3 +18,10 @@ DELETE
  request.delete()
 
 """
+
+#Headers 
+
+"""
+What is Header in requests ?
+For some APIs key, they want you to provide the Authentication in the Header, which is more secure.
+"""

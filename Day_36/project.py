@@ -48,3 +48,7 @@ if diff_percent > 0.1:
     artical = news_response.json()["articles"]
     three_articals = artical[:3]
     print(three_articals)
+
+    formatted_articles = [f"Headline: {article['title']}, \nBrief: {article['description']}" for article in three_articals]
+
+    print(formatted_articles)

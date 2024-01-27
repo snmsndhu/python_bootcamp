@@ -3,7 +3,8 @@ import os
 import requests
 from dotenv import load_dotenv
 load_dotenv("../.env")
-API_KEY = os.environ["STOCK_PRICE_API"]
+STOCK_API_KEY = os.environ["STOCK_PRICE_API"]
+NEWS_API_KEY = os.environ["NEW_API_KEY"]
 
 STOCK_NAME = "TSLA"
 COMPANY_NAME = "Tesla Inc"
@@ -11,7 +12,12 @@ COMPANY_NAME = "Tesla Inc"
 stock_parameters = {
     "function": "TIME_SERIES_DAILY",
     "symbol": STOCK_NAME,
-    "apikey": API_KEY,
+    "apikey": STOCK_API_KEY,
+}
+
+new_params = {
+    "apiKey": NEWS_API_KEY,
+    "qInTitle": COMPANY_NAME,
 }
 
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
@@ -36,3 +42,9 @@ print(difference)
 
 diff_percent = (difference / float(yesterday_closing_price)) * 100
 print(diff_percent)
+
+if diff_percent > 0.1:
+    news_response = requests.get(NEWS_ENDPOINT, new_params)
+    artical = news_response.json()["articles"]
+    three_articals = artical[:3]
+    print(three_articals)

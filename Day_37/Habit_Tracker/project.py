@@ -17,5 +17,17 @@ user_params ={
     "notMinor": "yes",
 }
 
-response = requests.post(url = pixel_endpoint, json=user_params)
-print(response.text)
+# response = requests.post(url = pixel_endpoint, json=user_params)
+# print(response.text)
+
+graph_endpoint = f"{pixel_endpoint}/{USER}/graphs"
+
+graph_config = {
+    "id": "graph1",
+    "name": "Cycling Graph",
+    "unit": "Km",
+    "type": "float",
+    "color": "ajisai"
+}
+
+requests.post()

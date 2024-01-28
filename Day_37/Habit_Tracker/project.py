@@ -60,5 +60,16 @@ new_pixel_data = {
     "quantity": "4.5"
 }
 
-response = requests.put(url=update_endpoint, json= new_pixel_data, headers=headers)
+# response = requests.put(url=update_endpoint, json= new_pixel_data, headers=headers)
+# print(response.text)
+
+
+delete_endpoint = f"{pixel_endpoint}/{USER}/graphs/{GRAPH_ID}/{today.strftime("%Y%m%d")}"
+
+response = requests.delete(url=delete_endpoint, headers=headers)
 print(response.text)
+
+
+
+
+

@@ -3,7 +3,11 @@
 import requests
 import os
 from dotenv import load_dotenv
+from datetime import datetime
 load_dotenv("../../.env")
+
+
+
 TOKEN = os.environ["TOKEN"]
 USER = os.environ["USER_NAME"]
 GRAPH_ID = "graph1"
@@ -39,10 +43,22 @@ headers = {
 # print(response.text)
 
 pixel_creation_endpoint = f"{pixel_endpoint}/{USER}/graphs/{GRAPH_ID}"
+today = datetime.now()
+
+
 pixe_data = {
-    "date": "20240128",
-    "quantity": "7.70"
+    "date": today.strftime("%Y%m%d"),
+    "quantity": "7.70",
 }
 
-response = requests.post(url= pixel_creation_endpoint, json=pixe_data, headers=headers)
+# response = requests.post(url= pixel_creation_endpoint, json=pixe_data, headers=headers)
+# print(response.text)
+
+update_endpoint = f"{pixel_endpoint}/{USER}/graphs/{GRAPH_ID}/{today.strftime("%Y%m%d")}"
+
+new_pixel_data = {
+    "quantity": "4.5"
+}
+
+response = requests.put(url=update_endpoint, json= new_pixel_data, headers=headers)
 print(response.text)

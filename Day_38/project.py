@@ -37,6 +37,9 @@ result = response.json()
 
 today_date = datetime.now().strftime("%d/%m/%Y")
 now_time = datetime.now().strftime("%X")
+bearer_headers = {
+"Authorization": "Bearer YOUR_TOKEN"
+}
 
 for exercise in result["exercises"]:
     sheet_inputs = {
@@ -49,6 +52,6 @@ for exercise in result["exercises"]:
         }
     }
 
-    sheet_response = requests.post(sheet_endpoint, json=sheet_inputs)
+    sheet_response = requests.post(sheet_endpoint, json=sheet_inputs, headers=bearer_headers)
 
     print(sheet_response.text)

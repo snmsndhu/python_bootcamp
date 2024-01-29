@@ -34,4 +34,9 @@ python -m pip install requests
 dotenv
 
 pip install python-dotenv
+
+Beautiful Soup 
+
+It can be used to extract the data from the Website.
 """
+
